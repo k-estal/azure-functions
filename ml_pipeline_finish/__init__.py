@@ -18,7 +18,7 @@ def main(event: func.EventGridEvent):
     })
 
     logging.info('Python EventGrid trigger processed an event: %s', result)
-    send_event(event)
+    #send_event(event)
 
 
 
