@@ -22,11 +22,11 @@ def main(event: func.EventGridEvent):
 
 
 
-def send_event(event: func.EventGridEvent):
-    topic_key = os.environ["EVENTGRID_TOPIC_KEY"]
-    endpoint = os.environ["EVENTGRID_TOPIC_ENDPOINT"]
+# def send_event(event: func.EventGridEvent):
+#     topic_key = os.environ["EVENTGRID_TOPIC_KEY"]
+#     endpoint = os.environ["EVENTGRID_TOPIC_ENDPOINT"]
 
-    credential = AzureKeyCredential(topic_key)
-    client = EventGridPublisherClient(endpoint, credential)
+#     credential = AzureKeyCredential(topic_key)
+#     client = EventGridPublisherClient(endpoint, credential)
 
-    client.send([ event ])
+#     client.send([ event ])
